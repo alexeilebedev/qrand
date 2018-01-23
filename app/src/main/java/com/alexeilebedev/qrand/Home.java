@@ -56,7 +56,7 @@ public class Home extends AppCompatActivity {
         Date date=new Date();
         int value = _qrand.readu8();
         _textview.append(stringOr(_qrand._log,""));
-        _textview.append(String.format("date:%s  n:%s\n",date.toString(),n));
+        _textview.append(String.format("date:\"%s\"  n:%s\n",date.toString(),n));
         _textview.scrollTo(0, _textview.getScrollY());
         if (value==-1) {
             _textview.append(stringOr(_qrand._error + "\n","error\n"));
